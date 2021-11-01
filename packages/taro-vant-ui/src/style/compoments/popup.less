@@ -1,0 +1,201 @@
+@import '../variables/defalut.less';
+
+.tv-popup {
+  position: fixed;
+  box-sizing: border-box;
+  max-height: 100%;
+  overflow-y: auto;
+  transition-timing-function: ease;
+  animation: ease both;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--popup-background-color, @popup-background-color);
+
+  &--center {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    &.tv-popup--round {
+      border-radius: var(
+        --popup-round-border-radius,
+        @popup-round-border-radius
+      );
+    }
+  }
+
+  &--top {
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.tv-popup--round {
+      border-radius: 0 0
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        );
+    }
+  }
+
+  &--right {
+    top: 0;
+    right: 0;
+    // transform: translate3d(0, -50%, 0);
+
+    &.tv-popup--round {
+      border-radius: var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        0 0
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        );
+    }
+  }
+
+  &--bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &.tv-popup--round {
+      border-radius: var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        0 0;
+    }
+  }
+
+  &--left {
+    top: 0;
+    left: 0;
+    // transform: translate3d(0, -50%, 0);
+
+    &.tv-popup--round {
+      border-radius: 0
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        var(
+          --popup-round-border-radius,
+          var(--popup-round-border-radius, @popup-round-border-radius)
+        )
+        0;
+    }
+  }
+
+  &--bottom&--safe {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  &--safeTop {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  &__close-icon {
+    position: absolute;
+    z-index: var(--popup-close-icon-z-index, @popup-close-icon-z-index);
+    color: var(--popup-close-icon-color, @popup-close-icon-color);
+    font-size: var(--popup-close-icon-size, @popup-close-icon-size);
+
+    &--top-left {
+      top: var(--popup-close-icon-margin, @popup-close-icon-margin);
+      left: var(--popup-close-icon-margin, @popup-close-icon-margin);
+    }
+
+    &--top-right {
+      top: var(--popup-close-icon-margin, @popup-close-icon-margin);
+      right: var(--popup-close-icon-margin, @popup-close-icon-margin);
+    }
+
+    &--bottom-left {
+      bottom: var(--popup-close-icon-margin, @popup-close-icon-margin);
+      left: var(--popup-close-icon-margin, @popup-close-icon-margin);
+    }
+
+    &--bottom-right {
+      right: var(--popup-close-icon-margin, @popup-close-icon-margin);
+      bottom: var(--popup-close-icon-margin, @popup-close-icon-margin);
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.tv-scale-enter-active,
+.tv-scale-leave-active {
+  transition-property: opacity, transform;
+}
+
+.tv-scale-enter,
+.tv-scale-leave-to {
+  transform: translate3d(-50%, -50%, 0) scale(0.7);
+  opacity: 0;
+}
+
+.tv-fade-enter-active,
+.tv-fade-leave-active {
+  transition-property: opacity;
+}
+
+.tv-fade-enter,
+.tv-fade-leave-to {
+  opacity: 0;
+}
+
+.tv-center-enter-active,
+.tv-center-leave-active {
+  transition-property: opacity;
+}
+
+.tv-center-enter,
+.tv-center-leave-to {
+  opacity: 0;
+}
+
+.tv-bottom-enter-active,
+.tv-bottom-leave-active,
+.tv-top-enter-active,
+.tv-top-leave-active,
+.tv-left-enter-active,
+.tv-left-leave-active,
+.tv-right-enter-active,
+.tv-right-leave-active {
+  transition-property: transform;
+}
+
+.tv-bottom-enter,
+.tv-bottom-leave-to {
+  transform: translate3d(0, 100%, 0);
+}
+
+.tv-top-enter,
+.tv-top-leave-to {
+  transform: translate3d(0, -100%, 0);
+}
+
+.tv-left-enter,
+.tv-left-leave-to {
+  transform: translate3d(-100%, -50%, 0);
+}
+
+.tv-right-enter,
+.tv-right-leave-to {
+  transform: translate3d(100%, -50%, 0);
+}
