@@ -1,0 +1,17 @@
+{
+  "npmClient": "yarn",
+  "useWorksoaces": true,
+  "packages": [
+    "packages/taro-vant-ui"
+  ],
+  "command": {
+    "publish": {
+      "message": "chore(release): publish %s"
+    },
+    "create": {
+      "homepage": "",
+      "license": "MIT"
+    }
+  },
+  "version": "1.0.0-beat"
+}
