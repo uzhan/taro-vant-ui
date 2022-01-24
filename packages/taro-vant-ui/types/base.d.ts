@@ -3,7 +3,7 @@ import { CSSProperties } from 'react'
 export interface TvComponent {
   className?: string
 
-  customStyle?: CSSProperties
+  customStyle?: string | CSSProperties
 }
 
 export interface TvIconBaseProps2 extends TvComponent {

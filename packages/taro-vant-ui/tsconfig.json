@@ -5,8 +5,8 @@
     "module": "commonjs",
     "baseUrl": "./",
     "typeRoots": [
+      "./types",
       "node_modules/@types",
-      "types"
     ]
   }
 }
