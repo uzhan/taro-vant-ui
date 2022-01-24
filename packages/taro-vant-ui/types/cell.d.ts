@@ -1,5 +1,5 @@
 import { CSSProperties, ComponentClass } from 'react'
-import TvComponent from './base'
+import * as TvComponent from './base.d'
 
 export interface TvCellProps extends TvComponent {
   /**

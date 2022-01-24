@@ -1,6 +1,6 @@
 import { CommonEvent, CommonEventFunction } from '@tarojs/components'
 import React, { ComponentClass } from 'react'
-import TvComponent from './base'
+import * as TvComponent from './base.d'
 
 export interface TvImageProps extends TvComponent {
   /**

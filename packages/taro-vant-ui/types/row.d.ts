@@ -1,6 +1,6 @@
 import { ComponentClass } from 'react'
 import { CommonEventFunction } from '@tarojs/components/types/common'
-import TvComponent from './base'
+import * as TvComponent from './base.d'
 
 export type RowAlign = 'top' | 'center' | 'bottom'
 

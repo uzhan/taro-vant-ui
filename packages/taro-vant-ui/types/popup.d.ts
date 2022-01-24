@@ -1,5 +1,5 @@
 import { ComponentClass, CSSProperties } from 'react'
-import TvComponent from './base'
+import * as TvComponent from './base.d'
 
 export interface TvPopupState {
   display: boolean
