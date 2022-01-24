@@ -6,8 +6,9 @@ node_modules/
 .idea
 
 # Build outputs
-packages/taro-ui/lib/
+packages/taro-vant-ui/lib/
 packages/**/dist/
+packages/**/types/
 
 # Test files
 coverage

@@ -1,6 +1,4 @@
 {
-  "npmClient": "yarn",
-  "useWorksoaces": true,
   "packages": [
     "packages/taro-vant-ui"
   ],
@@ -9,9 +7,11 @@
       "message": "chore(release): publish %s"
     },
     "create": {
-      "homepage": "",
+      "homepage": "https://github.com/uzhan/taro-vant-ui",
       "license": "MIT"
     }
   },
-  "version": "1.0.0-beat"
+  "version": "0.0.8-alpha.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

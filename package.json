@@ -1,9 +1,10 @@
 {
   "private": true,
-  "name": "taro-vant-ui",
+  "name": "@uzhan/taro-vant-ui",
+  "version": "0.0.8-alpha.1",
   "description": "vant ui for Taro",
-  "author": "",
-  "homepage": "",
+  "author": "uzhan.net.cn",
+  "homepage": "https://github.com/uzhan/taro-vant-ui#readme",
   "workspaces": {
     "packages": [
       "packages/*"
@@ -18,7 +19,6 @@
     "publish": "lerna publish from-git --yes"
   },
   "devDependencies": {
-    "lerna": "^4.0.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
@@ -34,14 +34,15 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "husky": "^4.2.3",
+    "jest": "27.0.3",
+    "jest-axe": "5.0.1",
+    "jest-environment-node": "27.4.4",
+    "jest-image-snapshot": "4.5.1",
+    "jest-puppeteer": "6.0.0",
+    "lerna": "^4.0.0",
     "lint-staged": "^10.1.2",
     "prettier": "^2.0.3",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.3.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.16.0",
-    "stylelint-less": "^1.0.1",
-    "typescript": "~3.7.2"
+    "typescript": "^4.5.5"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,20 @@
+.block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  background-color: #1989fa;
+}
+
+.tv-enter-active-class,
+.tv-leave-active-class {
+  transition-property: background-color, transform;
+}
+
+.tv-enter-class,
+.tv-leave-to-class {
+  background-color: red;
+  transform: rotate(-360deg) translate3d(-100%, -100%, 0);
+}

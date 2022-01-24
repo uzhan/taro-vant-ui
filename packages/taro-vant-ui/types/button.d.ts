@@ -1,6 +1,6 @@
 import { ComponentClass } from 'react'
-import { CommonEventFunction } from '@tarojs/components/types/common'
 import { ButtonProps } from '@tarojs/components/types/Button'
+import { CommonEventFunction } from '@tarojs/components/types/common'
 
 import * as TvComponent from './base'
 
