@@ -1,0 +1,39 @@
+{
+  "name": "taro-vant-docs",
+  "version": "1.0.0-beat",
+  "description": "taro vant ui docs",
+  "keywords": [
+    "taro",
+    "taro-ui",
+    "taro",
+    "vant"
+  ],
+  "homepage": "https://github.com/uzhan/taro-vant-ui#readme",
+  "license": "MIT",
+  "main": "lib/taro-vant-docs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzhan/taro-vant-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "clean": "rimraf dist"
+  },
+  "bugs": {
+    "url": "https://github.com/uzhan/taro-vant-ui/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@umijs/fabric": "^2.10.0"
+  }
+}
