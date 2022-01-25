@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "@uzhan/taro-vant-ui",
   "version": "0.0.8-alpha.2",
   "description": "vant ui for Taro",
