@@ -3,7 +3,6 @@ node_modules/
 
 # Yarn and NPM files
 yarn-error.log
-yarn.lock
 package-lock.json
 
 # Template files
@@ -14,6 +13,7 @@ package-lock.json
 # Editor and IDE files
 .vscode
 .idea
+
 
 # Build outputs
 packages/taro-vant-ui/lib/
