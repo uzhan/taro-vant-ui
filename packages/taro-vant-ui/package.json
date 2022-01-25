@@ -30,7 +30,8 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "tag": "next"
+    "tag": "next",
+    "access": "public"
   },
   "scripts": {
     "dev": "yarn run dev:lib",

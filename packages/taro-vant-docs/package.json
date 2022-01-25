@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "taro-vant-docs",
   "version": "1.0.0-beat",
   "description": "taro vant ui docs",
