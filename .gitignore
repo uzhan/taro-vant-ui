@@ -9,6 +9,7 @@ package-lock.json
 .temp
 .DS_Store
 .eslintcache
+lerna-debug.log
 
 # Editor and IDE files
 .vscode
