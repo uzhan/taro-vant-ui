@@ -4,10 +4,15 @@
   "description": "vant ui for Taro",
   "author": "uzhan.net.cn",
   "homepage": "https://github.com/uzhan/taro-vant-ui#readme",
+  "license": "MIT",
   "workspaces": {
     "packages": [
       "packages/*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uzhan/taro-vant-ui.git"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
