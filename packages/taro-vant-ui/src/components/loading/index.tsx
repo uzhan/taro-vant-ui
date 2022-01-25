@@ -3,6 +3,7 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import classNames from 'classnames'
 import { TvLoadingProps } from '../../../types/loading'
+import { mergeStyle } from '../../common/utils'
 
 export default class TvLoading extends React.Component<TvLoadingProps> {
   public static defaultProps: TvLoadingProps
@@ -11,12 +12,14 @@ export default class TvLoading extends React.Component<TvLoadingProps> {
   public render(): JSX.Element {
     const { color, type, size, textSize, vertical, className, customStyle } =
       this.props
-    const ringStyle = {
-      color,
-      width: size,
-      height: size,
-      ...customStyle
-    }
+    const ringStyle = mergeStyle(
+      {
+        color,
+        width: size,
+        height: size
+      },
+      customStyle as object
+    )
     const rootClassName = 'tv-loading'
 
     return (

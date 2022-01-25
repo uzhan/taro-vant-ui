@@ -2,7 +2,7 @@ import { ComponentClass } from 'react'
 import { ButtonProps } from '@tarojs/components/types/Button'
 import { CommonEventFunction } from '@tarojs/components/types/common'
 
-import * as TvComponent from './base'
+import { TvComponent } from './base'
 
 type TaroButtonProps = Pick<
   ButtonProps,

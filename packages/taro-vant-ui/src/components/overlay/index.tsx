@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import TvTransition from '../transition/index'
+import { mergeStyle } from '../../common/utils'
 import { TvOverlayProps } from '../../../types/overlay'
 
 export default class TvOverlay extends Component<TvOverlayProps> {
@@ -25,7 +26,7 @@ export default class TvOverlay extends Component<TvOverlayProps> {
             show={show}
             className='tv-overlay'
             duration={duration}
-            customStyle={{ zIndex, ...customStyle }}
+            customStyle={mergeStyle({ zIndex }, customStyle as object)}
             onClick={this.onClick.bind(this)}
             onTouchMove={this.onNoop.bind(this)}
           >
@@ -36,7 +37,7 @@ export default class TvOverlay extends Component<TvOverlayProps> {
             show={show}
             className='tv-overlay'
             duration={duration}
-            customStyle={{ zIndex, ...customStyle }}
+            customStyle={mergeStyle({ zIndex }, customStyle as object)}
             onClick={this.onClick.bind(this)}
           >
             {this.props.children}

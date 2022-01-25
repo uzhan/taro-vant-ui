@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import { View } from '@tarojs/components'
 import { RowContext } from '../row'
-import { TvColProps } from '../../../types/col'
+import { TvColProps } from '../../../types/col.d'
 
 export default class TvCol extends React.Component<TvColProps> {
   public static defaultProps: TvColProps

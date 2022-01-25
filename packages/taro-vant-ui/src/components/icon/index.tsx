@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import { View, Image } from '@tarojs/components'
 import { TvIconProps } from '../../../types/icon'
+import { mergeStyle } from '../../common/utils'
 
 export default class TvIcon extends React.Component<TvIconProps> {
   public static defaultProps: TvIconProps
@@ -19,7 +20,7 @@ export default class TvIcon extends React.Component<TvIconProps> {
             : `${classPrefix} ${classPrefix}-${name}`,
           className
         )}
-        style={{ color, fontSize: size, ...customStyle }}
+        style={mergeStyle({ color, fontSize: size }, customStyle as object)}
         onClick={onClick}
       >
         {name?.indexOf('/') !== -1 ? (

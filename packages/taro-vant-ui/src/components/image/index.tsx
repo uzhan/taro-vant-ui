@@ -2,8 +2,9 @@ import React from 'react'
 import classNames from 'classnames'
 import PropType, { InferProps } from 'prop-types'
 import { View, Image, CommonEvent } from '@tarojs/components'
+import { mergeStyle } from '../../common/utils'
 import TvIcon from '../icon'
-import { TvImageProps, TvImageState } from '../../../types/image'
+import { TvImageProps, TvImageState } from '../../../types/image.d'
 
 const FIT_MODE_MAP = {
   none: 'center',
@@ -70,13 +71,15 @@ export default class TvImage extends React.Component<
 
     return (
       <View
-        style={{
-          width,
-          height,
-          borderRadius: radius || '',
-          overflow: radius ? 'hidden' : '',
-          ...customStyle
-        }}
+        style={mergeStyle(
+          {
+            width,
+            height,
+            borderRadius: radius || '',
+            overflow: radius ? 'hidden' : ''
+          },
+          customStyle as object
+        )}
         onClick={onClick}
         className={classNames(rootClassName, classObject, className)}
       >

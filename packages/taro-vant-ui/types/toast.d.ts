@@ -1,6 +1,6 @@
 import { ComponentClass } from 'react'
 
-import * as TvComponent from './base.d'
+import { TvComponent } from './base.d'
 
 export interface TvToastState {
   /**

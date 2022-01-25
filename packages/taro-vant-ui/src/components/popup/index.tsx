@@ -5,6 +5,7 @@ import TvIcon from '../icon'
 import TvOverlay from '../overlay'
 import TvTransition from '../transition/index'
 import { TvPopupProps } from '../../../types/popup'
+import { mergeStyle } from '../../common/utils'
 
 const toTransactionName = {
   top: 'slide-down',
@@ -78,10 +79,12 @@ export default class TvPopup extends React.Component<TvPopupProps> {
           onAfterEnter={onOpend && onOpend}
           className={classNames(rootClassName, classObject, className)}
           name={toTransactionName[position as string]}
-          customStyle={{
-            zIndex: (zIndex as number) + 1,
-            ...customStyle
-          }}
+          customStyle={mergeStyle(
+            {
+              zIndex: (zIndex as number) + 1
+            },
+            customStyle as object
+          )}
         >
           {this.props.children}
           {closeable && (
