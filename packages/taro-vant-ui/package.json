@@ -1,6 +1,6 @@
 {
   "name": "taro-vant-ui",
-  "version": "1.0.1-beat10",
+  "version": "0.0.8-alpha.2",
   "description": "vant ui for taro",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
@@ -22,8 +22,8 @@
     "dist",
     "types"
   ],
-  "author": "",
-  "homepage": "",
+  "author": "uzhan.net.cn",
+  "homepage": "https://github.com/uzhan/taro-vant-ui#readme",
   "repository": {
     "type": "git",
     "url": ""
